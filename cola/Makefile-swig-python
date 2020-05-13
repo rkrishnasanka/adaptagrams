@@ -15,7 +15,7 @@ adaptagrams_wrap.cxx: clean adaptagrams.i
 	swig -DNDEBUG -c++ -python adaptagrams.i
 
 adaptagrams: adaptagrams_wrap.cxx
-	python swig-python-setup.py build_ext --inplace $(COMPILER)
+	python3 swig-python-setup.py build_ext --inplace $(COMPILER)
 
 realclean: clean
 
